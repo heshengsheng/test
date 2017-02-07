@@ -1,0 +1,756 @@
+*{padding:0; margin:0; font-family:arial;over-flow:scroll;}
+ul li{ list-style:none;}
+a{ text-decoration:none;color:#0f496c;}
+a:hover{ text-decoration:underline;}
+
+body{
+	width:auto !important; 
+    width:960px; 
+	min-width:960px;
+	max-width:1224px;
+	margin:0 auto;
+	text-align: center;
+}
+#grid{
+	width:90%;	
+	height:100%;
+	margin:0 auto;
+	text-align: left;
+}
+
+#header{
+    height:120px;
+	background: url(../images/header_bg.jpg) repeat-x;
+	position:relative;
+}
+#header h2{
+	position:absolute;
+
+	display: inline-block;
+	font-size:22px;
+	margin-top: 50px;
+}
+#header small{
+	color:#373e46;
+	font-size:18px;
+}
+#header img{
+	margin-left:10px;
+	margin-top:30px;
+}
+
+#nav {
+	height:50px;
+	background:#bcd5e7;
+}
+#nav ul{
+	height:48px;
+}
+#nav ul li{
+	float:left;
+	padding:15px;
+	padding-bottom:12px;	
+}
+#nav a{
+	padding:7px;
+	padding-top:11px;
+	color:black;
+	font-size:20px;
+	
+}
+.active{
+	color:#820082;
+	border: 1px solid red;
+}
+
+#footer{
+	clear: both;
+	display: block;
+	margin-top:20px;
+	border-top:1px solid grey;
+	padding: 10px 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+#footer p{
+        text-align: left;
+		color: #454646;
+}
+#footer a{
+	color: #b9bcbc;
+}
+
+
+#searchBox{
+	width:98%; 
+    border:0.0001px solid #a8c2d0;
+	padding:0;
+    background:white;
+    padding:10px; 
+    padding-top:40px;
+    background:#f1f8fc;
+	margin:40px 0;
+	
+}
+#searchBox h5{
+	padding:15px 4px;
+	font-size:20px;
+	color:#0f496c;
+	background:#e3edf2;
+}
+#searchBox p{
+	font-size:16px;
+	color:#0f496c;
+	padding:10px 0;
+	width:100%;
+}
+#drug,#model,#gene,#snp{
+	float: left;
+    margin-bottom:50px;
+	width:45%;
+}
+
+#drug,#gene{
+	margin-right:60px;
+	margin-left:8px;
+}
+#searchBox input{
+	height:30px;
+	width:180px;
+	padding-left:5px;
+	font-size:15px;
+	color:#0f496c;
+	margin-top:10px;
+	/*background:#e3e3e3;*/
+	background: #f4f4f4;
+	padding-top: 5px;
+}
+#searchBox button{
+	height:30px;
+	width:60px;
+}
+
+
+
+
+
+/*pdx“≥√Ê*/
+#pdxTable{
+	border:1px solid grey;
+	margin:40px auto;
+	width:100%;
+	
+}
+#pdxTable tr{
+	padding:10px;
+}
+#pdxTable th{
+	text-align:center;
+	height:30px;
+	background:#d5e4f2;
+	font-size:18px;
+	font-weight:500;
+	color:black;
+}
+#pdxTable td{
+    border:1px solid grey;
+    padding:15px;
+}
+#pdxTable .title{
+	width:15%;
+	text-align:right;
+	padding:10px;	
+}
+#pdxTable .pdxDrugInfo{
+	border-collapse :collapse;
+	border-spacing:0;
+	border: none;
+}
+#pdxTable .pdxDrugInfo tr{
+	border: none;
+	background-color: #f3f9fc;
+}
+#pdxTable .pdxMap{
+	float: left;
+	margin-left: 15px;
+}
+#pdxTable .pdxMap p{
+	text-align: center;
+}
+#pdxTable .pdxMap img{
+	height:200px;
+	width:200px;
+}
+#pdxTable  .curve{
+	height:278px;
+	width:400px;
+}
+#pdxTable p{
+	margin: 20px;
+	margin-left: 5px;
+
+}
+
+
+
+/*gene*/
+#geneTip{
+	text-align:center;
+	font-weight:400;
+	color:#484848;
+	font-size:18px;
+	padding-top:30px;
+}
+#genePic{
+	text-align:center;
+	height: 1400px;
+	margin-bottom: 20px;
+}
+.progressBar { 
+border: solid 2px #86A5AD; 
+background: white url(/static/images/progressBar_m.gif) no-repeat 10px 10px; 
+}
+.progressBar { 
+display: block; 
+width: 180px; 
+height: 28px; 
+position: fixed;
+top: 50%; 
+left: 50%; 
+margin-left: -120px;
+padding: 10px 10px 10px 50px; 
+text-align: left; 
+line-height: 27px; 
+font-weight: bold; 
+position: absolute; 
+z-index: 2001; 
+} 
+/*snp*/
+.tableTip{
+	margin-top:30px;
+	font-size:20px;	
+	font-weight:500;
+}
+#snpInfo{
+	font-size:17px;
+    border:1px solid #d6e6f3;
+    font-weight:300;
+    margin-bottom:10px;
+    padding:12px 2px;
+    width:100%;
+    background:#f9bd09;
+    color:#161718;
+}
+
+/*browse page*/
+#browsePage{
+	margin:30px 0;
+	border:1px solid black;
+	padding-right: 30px;
+	padding-left: 10px;
+	height: auto;
+}
+#bTip{
+	margin-top: 30px;
+	height: 600px;
+	margin-left: 80px;
+    padding-top: 10px;
+	float: left;
+}
+#bMenu{
+	margin-left: 10px;
+	width: 200px;
+	height: 700px;
+	float: left;
+}
+.clear{
+	clear: both;
+}
+#bMenu button{
+	margin:10px 26px;
+	height:30px;
+	width:80px;
+	background:#b8d9dc;
+}
+
+#bTip h5{
+	font-size:20px;
+	color:black;
+	font-weight:400;
+    margin-bottom:16px;
+	line-height: 150%;
+	
+}
+#bTip p{
+	font-size:16px;
+	color:#484848;
+	line-height: 200%;
+	text-align: justify;
+}
+
+#bResult_wrapper,#dResult_wrapper{
+	margin:40px 0;
+}
+
+
+
+/*homePage“≥√Ê*/
+#homePage{
+	margin:20px auto;
+	height:auto !important; 
+	height:400px; 
+	min-height:400px; 
+	border:1px solid black;
+	background:#ebf1f5;
+	padding:10px 20px;
+}
+#homePage h2{
+	font-size:20px;
+	font-weight:500;
+	color:#414141;
+	text-align:center;
+}
+#homePage p{
+	text-indent:2em;
+	text-align:justify;
+	font-size:18px;
+	color:#373737;
+	font-weight:100;
+	Line-height:160%;
+}
+
+#homePage .test{
+	text-align: center;
+	margin-bottom: 50px;
+}
+#homePage .test p{
+	font-size: 15px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/*heatmap “≥√Ê*/
+#heatMapPage{
+	margin:10px 0;
+	padding-top:10px;
+	height:auto;
+}
+#hms{
+	float: left;
+	padding:20px;
+	width:220px;	
+	border:1px solid #7f7f7f;
+	background:#ebf5f5;
+	margin-bottom: 50px;
+}
+#hmResult{
+	float: left;
+	margin-left: 80px;
+/*	width:auto !important; 
+	width: 60%;
+	max-width: 60%;*/
+}
+#selectDataset{
+	margin-bottom:20px;
+}
+#selectDataset select{
+	height:30px;
+	width:210px;
+}
+#selectDataset option{
+	height:30px;
+	width:210px;
+}
+#selectDataset h4{
+	margin-top:10px;
+	font-size:16px;
+	 font-weight:500;
+}
+#hms textarea{
+	height:130px;
+	width:200px;
+	padding:10px;
+	margin-bottom:20px;
+}
+#hms p{
+	margin-bottom: 5px;
+}
+#hms p a{
+	color: blue;
+}
+#hmResult h1{
+	font-size:20px;
+	color:black;
+	font-weight:500;
+	border-bottom:1px solid black;
+    margin-bottom:30px;
+}
+#hmResult img{
+	margin-top: 12px;
+	margin-bottom: 30px;
+}
+#hmResult p{
+	text-indent:2em;
+    padding:0 5px;
+	font-size:16px;
+	color:#6f646a;
+	line-height:200%;
+	text-align:justify;
+}
+#heatMapPage h5{
+	font-size:16px;
+    padding-bottom:5px;
+    font-weight:600;
+}
+#heatMapPage #file1{
+	margin-bottom:10px;
+}
+#heatMapPage button{
+	width:50px;
+	height:30px;
+	margin-right: 10px;
+}
+#heatMapPage #example1{
+	margin-left: 50px;
+	width:80px;
+	height:25px;
+	margin-bottom: 5px;
+}
+
+#map{
+	overflow: auto;
+	text-align: center;
+	margin:30px auto;
+	margin-top: 0;
+	margin-top: -320px;
+	height: auto;
+	
+}
+
+#legends p{
+	font-size: 10px;
+	padding-top: 2px; 
+}
+#legends{
+	z-index: 9999;
+	text-align: left;
+	padding-bottom: 100px;
+	margin-top: 200px;
+    /*margin-top: 150px;
+	margin-left: 30px;*/
+	position: relative;
+	margin-left: 120px;
+}
+
+.dataTypeTable{
+	text-align: center;
+	border-collapse: collapse;
+    margin: 20px auto;
+}
+.dataTypeTable th{
+	background: #dae3f3;
+	padding: 0 10px;
+}
+.dataTypeTable tr{
+	height: 40px;
+}
+.dataTypeRow{
+	background: #e8ecf0;
+}
+.dataTypeRow td{
+	width:100px;
+}
+
+/*response*/
+#drugData,#drugPic{
+	margin:20px 5px;
+	text-align:center;
+}
+#drugData p,#drugPic p{
+	font-size:18px;
+	margin:5px 0;
+}
+
+.dataTable tbody td {
+	text-align: center;
+}
+
+
+#map .topleft .selector{    
+	display: none;
+}
+
+
+/*documentation*/
+
+
+.docTable{
+	border-collapse:collapse;
+	border-spacing:0;
+	text-align: left;
+	border-bottom: 1px solid grey;
+	margin-bottom: 20px;
+}
+.docTable th{
+	padding-left: 40px;
+	border-bottom: 1px solid grey;
+}
+.docTable tr{
+   padding: 5px 3px;
+   height: 30px;
+}
+.docTable td{
+	padding-left: 40px;
+}
+.docTable th{
+ font-weight: 600;
+}
+.docImg{
+	text-align: center;
+	display: block;
+	margin:0 auto;
+	margin-bottom: 20px;
+	border: 1px solid black;;
+}
+.noBorder{
+	border: none;
+}
+
+
+.contentsTip{
+	margin: 25px 0;
+	height: 30px;
+	padding-top: 14px;
+	padding-left:3px;
+	font-size: 18px;
+	color: #2771bd;
+	background: #cecece;
+}
+.contentsTip a{
+	color: #2771bd;
+}
+#doc{
+	height: 460px;
+	overflow-y: scroll;
+	margin-bottom: 10px;
+}
+#doc ul{
+	color: #2771bd;
+	margin-left: 20px;
+	font-size: large;
+	margin-top: 10px;
+}
+#doc ul li{
+	list-style:disc;
+	margin-left: 10px;
+	padding-bottom: 3px;
+}
+#doc a{
+	color: #3689de;
+	font-size: 16px;
+}
+#content{
+	margin-bottom: -20px;
+}
+#content a{
+	font-size: 18px;
+}
+
+#doc h4,#doc h3{
+	border-bottom: 2px solid #edebeb;
+	margin-bottom: 20px;
+	margin-top: 25px;
+	font-weight: 400;
+	font-size: 18px;
+}
+#doc h3{
+	font-size: 20px;
+}
+#doc p{
+	line-height: 25px;
+	text-align: justify;
+	padding-right: 3px;
+	padding-bottom: 5px;	
+}
+#doc p strong{
+	font-weight: 600;
+	color: black;
+}
+#doc .ulTip li{
+	color: #2e2d2d;
+	font-size: 17px;
+}
+#doc span{
+	height: 30px;
+	clear: both;
+	display: inline-block;
+	margin-top: 3px;
+}
+#doc .orderPic{
+	float: left;
+}
+.orderPic+span{
+	font-size: 16px;
+}
+#doc .dataTableTip{
+	font-size: 15px;
+	clear: both;
+	text-align: center;
+	margin: 0 auto;
+}
+#doc .dataProgress{
+	
+}
+
+
+/*data table*/
+.dataInfoTable{
+	margin: 0 auto;
+	border-collapse: collapse;
+	margin-top: 10px;
+	border: 1px solid grey;
+	text-align: center;
+	background-color: white;
+}
+.dataInfoTable td,.dataInfoTable  th{
+	border: 1px solid grey;
+	width:auto !important; 
+	width: 180px;
+	max-width: 180px;
+	height: 40px;
+	padding: 5px 5px;
+}
+.dataInfoTable  th{
+	font-weight: 400;
+	/*background-color: #d0dada;*/
+}
+.dataTables_filter{
+	margin-bottom: 30px;
+}
+
+/*CONTACT*/
+#contactPage{
+	margin: 20px 0;
+	margin-bottom: 80px;
+}
+#contactPage h4{
+	font-size: 16px;
+	font-weight: 600;
+	border-bottom: 1px solid #edebeb;
+}
+#contactPage address{
+	margin: 10px 0;
+	
+}
+#contactPage strong{
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 25px;
+}
+#contactPage span{
+	color: #4caab8;
+}
+
+
+/*heatmap result*/
+#heatMapR{
+	height: 80%;
+	width: 100%;
+	margin: 10px auto;
+}
+#heatMapTip{
+	size: 14px;
+	color: black;
+	margin:0px auto;
+	text-align: center;
+}
+#heatmapHead{
+	text-align: center;
+	margin: 10px 0;
+	margin-top: 20px;
+	size: 18px;
+	
+}
+
+
+
+/*tools*/
+#toolPage{
+	margin: 20px 0;
+}
+#toolPage p{
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #292929;
+}
+#toolPage select{
+	width: 140px;
+	height: 30px;
+	font-size: 16px;
+	background-color: #F0F0F0;
+}
+#toolPage button{	
+	margin: 10px 5px;
+	margin-left: 0;
+}
+
+#toolPage .submit,#toolPage .reset{
+	margin-top: 0px;
+	width: 70px;
+	height: 30px;
+}
+#toolPage .reset{
+	margin-left: 20px;
+}
+#photoCover{
+	background:#F0F0F0;
+	height: 30px;
+	width: 200px;
+}
+#toolPage .btn{
+	border: 1px solid #ABABAB;
+	height: 30px;
+	padding: 5px;
+	background:#F0F0F0;
+}
+#toolPage .toolTip{
+	
+}
+#toolPage h4{
+	font-size: 18px;
+	margin: 15px 0;
+	font-weight: 400;
+}
+/*tool result*/
+p.prediction{
+	font-size: 18px;
+	margin-top: 20px;
+}
+table.prediction{
+	font-size: 16px;
+	color: grey;
+	 font-weight:nomal;
+	 border-collapse:collapse;
+	 margin-top: 5px;
+}
+table.prediction td{
+	font-weight: 200;
+}
+table.prediction th{
+	height: 20px;
+	border: 1px solid black;
+   
+	padding: 2px 5px;
+	padding-top: 8px;
+}
+p.predictTip{
+	font-size: 18px;
+	margin-top: 20px;
+	color: grey;
+}
+img.prediction{
+	position: relative;
+	z-index: -3;
+	margin-top: -40px;
+}
